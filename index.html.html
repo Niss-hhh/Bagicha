@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bagicha — Discover beautiful plants, learn gardening tips, and grow your own virtual garden." />
+    <title>Bagicha — Your Digital Garden</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylehome.css" />
+    <link rel="stylesheet" href="css/styleplant.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__logo"><span class="navbar__logo-icon">🌿</span> Bagicha</a>
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="index.html" class="navbar__link active">Home</a></li>
+                <li><a href="plants.html" class="navbar__link">Explore Plants</a></li>
+                <li><a href="tips.html" class="navbar__link">Tips</a></li>
+                <li><a href="garden.html" class="navbar__link">My Garden</a></li>
+                <li><a href="about.html" class="navbar__link">About</a></li>
+                <li><a href="payment.html" class="navbar__link">Premium</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="register.html" class="btn btn--sm btn--primary" style="margin-right:var(--sp-2)">Sign Up</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge">🌱 Welcome to Bagicha</div>
+                <h1 class="hero__title">Discover the Joy of <span>Gardening</span></h1>
+                <p class="hero__description">Explore a curated collection of beautiful plants, learn expert gardening tips, and build your own virtual garden — all in one place.</p>
+                <div class="hero__actions">
+                    <a href="plants.html" class="btn btn--primary btn--lg">Explore Plants 🌻</a>
+                    <a href="garden.html" class="btn btn--secondary btn--lg">My Garden 🌷</a>
+                </div>
+            </div>
+            <div class="hero__visual" aria-hidden="true">🪴</div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title reveal">Why Bagicha?</h2>
+            <p class="section-subtitle reveal">Everything you need to start your garden journey, right at your fingertips.</p>
+            <div class="features-grid">
+                <div class="feature-card reveal"><div class="feature-card__icon">🌸</div><h3 class="feature-card__title">Plant Encyclopedia</h3><p class="feature-card__text">Browse a rich catalog of 20+ plants with detailed care instructions, sunlight needs, and watering schedules.</p></div>
+                <div class="feature-card reveal"><div class="feature-card__icon">💡</div><h3 class="feature-card__title">Expert Tips</h3><p class="feature-card__text">Read curated gardening tips from experts to help your plants thrive in every season.</p></div>
+                <div class="feature-card reveal"><div class="feature-card__icon">🌿</div><h3 class="feature-card__title">Virtual Garden</h3><p class="feature-card__text">Save your favorite plants and build a personal virtual garden that persists across sessions.</p></div>
+                <div class="feature-card reveal"><div class="feature-card__icon">🌙</div><h3 class="feature-card__title">Dark Mode</h3><p class="feature-card__text">Switch between light and dark themes for a comfortable browsing experience, day or night.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR PLANTS -->
+    <section class="section" style="background: var(--clr-surface-alt);">
+        <div class="container">
+            <h2 class="section-title reveal">Popular Plants</h2>
+            <p class="section-subtitle reveal">A handpicked selection of beloved plants to get you started.</p>
+            <div class="plant-grid" id="popularPlantsGrid"></div>
+            <div class="text-center" style="margin-top: var(--sp-10);"><a href="plants.html" class="btn btn--outline btn--lg reveal">View All Plants →</a></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title reveal">Ready to Start Your Garden?</h2>
+            <p class="section-subtitle reveal">Create your own virtual garden today and keep track of your favorite plants.</p>
+            <a href="garden.html" class="btn btn--accent btn--lg reveal">Start My Garden 🌱</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div><div class="footer__brand">🌿 Bagicha</div><p class="footer__desc">Your digital companion for exploring plants, learning gardening tips, and growing a beautiful virtual garden.</p></div>
+                <div><h4 class="footer__heading">Pages</h4><a href="index.html" class="footer__link">Home</a><a href="plants.html" class="footer__link">Explore Plants</a><a href="tips.html" class="footer__link">Gardening Tips</a><a href="garden.html" class="footer__link">My Garden</a><a href="about.html" class="footer__link">About</a></div>
+                <div><h4 class="footer__heading">Account</h4><a href="register.html" class="footer__link">Sign Up</a><a href="payment.html" class="footer__link">Premium Plans</a></div>
+                <div><h4 class="footer__heading">Connect</h4><a href="#" class="footer__link">GitHub</a><a href="#" class="footer__link">Twitter</a><a href="#" class="footer__link">Email Us</a></div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 Bagicha. Made with 💚 for plant lovers.</p>
+                <div class="footer__socials"><a href="#" class="footer__social-link" aria-label="GitHub">🐙</a><a href="#" class="footer__social-link" aria-label="Twitter">🐦</a><a href="#" class="footer__social-link" aria-label="Email">✉️</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal (for popular plants) -->
+    <div class="modal-overlay" id="plantModal">
+        <div class="modal">
+            <div class="modal__header"><div class="modal__image" id="modalImage"></div><button class="modal__close" id="modalClose" aria-label="Close">&times;</button></div>
+            <div class="modal__body"><h2 class="modal__title" id="modalTitle"></h2><p class="modal__botanical" id="modalBotanical"></p><p class="modal__desc" id="modalDesc"></p><div class="modal__details" id="modalDetails"></div><div class="modal__actions"><button class="btn btn--primary" id="modalAddBtn">Add to My Garden 🌱</button><button class="btn btn--secondary" id="modalCloseBtn">Close</button></div></div>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/plants.js"></script>
+</body>
+</html>

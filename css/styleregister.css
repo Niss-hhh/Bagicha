@@ -1,0 +1,32 @@
+/* ============================================
+   BAGICHA — Registration Page (register.html)
+   ============================================ */
+
+.auth-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: var(--sp-8); background: linear-gradient(160deg, var(--clr-primary-50) 0%, var(--clr-bg) 40%, var(--clr-surface) 100%); }
+[data-theme="dark"] .auth-page { background: linear-gradient(160deg, var(--clr-primary-900) 0%, var(--clr-bg) 40%, var(--clr-surface) 100%); }
+
+.auth-card { background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-xl); padding: var(--sp-10); max-width: 480px; width: 100%; box-shadow: var(--shadow-lg); }
+.auth-card__logo { text-align: center; margin-bottom: var(--sp-8); }
+.auth-card__logo-icon { font-size: 3rem; display: block; margin-bottom: var(--sp-2); }
+.auth-card__logo-text { font-family: var(--ff-heading); font-size: var(--fs-2xl); font-weight: var(--fw-bold); color: var(--clr-primary-700); }
+[data-theme="dark"] .auth-card__logo-text { color: var(--clr-primary-400); }
+
+.auth-card__title { font-family: var(--ff-heading); font-size: var(--fs-xl); font-weight: var(--fw-semibold); text-align: center; margin-bottom: var(--sp-2); }
+.auth-card__subtitle { text-align: center; color: var(--clr-text-muted); font-size: var(--fs-sm); margin-bottom: var(--sp-8); }
+
+.form-group { margin-bottom: var(--sp-5); }
+.form-group__label { display: block; font-size: var(--fs-sm); font-weight: var(--fw-medium); margin-bottom: var(--sp-2); color: var(--clr-text); }
+.form-group__input { width: 100%; padding: var(--sp-3) var(--sp-4); background: var(--clr-surface-alt); border: 2px solid var(--clr-border); border-radius: var(--radius-md); font-size: var(--fs-base); transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out); }
+.form-group__input::placeholder { color: var(--clr-text-muted); }
+.form-group__input:focus { outline: none; border-color: var(--clr-primary-500); box-shadow: 0 0 0 4px rgba(34, 197, 94, .15); }
+.form-group__input.error { border-color: #dc2626; box-shadow: 0 0 0 4px rgba(220, 38, 38, .1); }
+.form-group__error { font-size: var(--fs-xs); color: #dc2626; margin-top: var(--sp-1); display: none; }
+.form-group__error.visible { display: block; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); }
+
+.auth-card__footer { text-align: center; margin-top: var(--sp-6); font-size: var(--fs-sm); color: var(--clr-text-muted); }
+.auth-card__footer a { color: var(--clr-primary-600); font-weight: var(--fw-semibold); }
+.auth-card__footer a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) { .form-row { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .auth-card { padding: var(--sp-6); } }

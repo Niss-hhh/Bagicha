@@ -1,0 +1,21 @@
+/* ============================================
+   BAGICHA — Garden Page (garden.html)
+   ============================================ */
+
+.garden-empty { text-align: center; padding: var(--sp-16) var(--sp-4); }
+.garden-empty__icon { font-size: 5rem; margin-bottom: var(--sp-6); display: inline-block; animation: float 4s ease-in-out infinite; }
+.garden-empty__title { font-family: var(--ff-heading); font-size: var(--fs-2xl); margin-bottom: var(--sp-3); }
+.garden-empty__text { color: var(--clr-text-muted); font-size: var(--fs-md); margin-bottom: var(--sp-8); }
+
+.garden-stats { display: flex; gap: var(--sp-6); justify-content: center; flex-wrap: wrap; margin-bottom: var(--sp-10); }
+.garden-stat { background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-xl); padding: var(--sp-6) var(--sp-8); text-align: center; min-width: 150px; transition: all var(--dur-base) var(--ease-out); }
+.garden-stat:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.garden-stat__number { font-family: var(--ff-heading); font-size: var(--fs-3xl); font-weight: var(--fw-bold); color: var(--clr-primary-600); }
+.garden-stat__label { font-size: var(--fs-sm); color: var(--clr-text-muted); margin-top: var(--sp-1); }
+
+.garden-plant-card__remove { width: 38px; height: 38px; border-radius: var(--radius-round); display: flex; align-items: center; justify-content: center; font-size: var(--fs-lg); background: #fef2f2; color: #dc2626; border: 2px solid #fecaca; transition: all var(--dur-fast) var(--ease-out); flex-shrink: 0; }
+.garden-plant-card__remove:hover { background: #dc2626; color: #fff; border-color: #dc2626; }
+
+@media (max-width: 480px) {
+  .garden-stats { flex-direction: column; align-items: center; }
+}

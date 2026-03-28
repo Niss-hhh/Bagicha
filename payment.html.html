@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Go Premium with Bagicha — unlock exclusive features and support the project." />
+    <title>Premium Plans — Bagicha</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylepayment.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__logo"><span class="navbar__logo-icon">🌿</span> Bagicha</a>
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="index.html" class="navbar__link">Home</a></li>
+                <li><a href="plants.html" class="navbar__link">Explore Plants</a></li>
+                <li><a href="tips.html" class="navbar__link">Tips</a></li>
+                <li><a href="garden.html" class="navbar__link">My Garden</a></li>
+                <li><a href="about.html" class="navbar__link">About</a></li>
+                <li><a href="payment.html" class="navbar__link active">Premium</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="register.html" class="btn btn--sm btn--primary" style="margin-right:var(--sp-2)">Sign Up</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header__icon">🌟</div>
+            <h1 class="page-header__title">Go Premium</h1>
+            <p class="page-header__subtitle">Unlock exclusive features and support the Bagicha project with a premium plan.</p>
+        </div>
+    </header>
+
+    <!-- PRICING -->
+    <section class="section payment-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <div class="pricing-card__inner">
+                        <div class="pricing-card__icon">🌱</div>
+                        <h3 class="pricing-card__title">Seedling</h3>
+                        <div class="pricing-card__price">Free</div>
+                        <p class="pricing-card__desc">Perfect for beginners getting started.</p>
+                        <ul class="pricing-card__features"><li>Browse all 20 plants</li><li>Save up to 5 plants in garden</li><li>Access gardening tips</li><li>Light & dark mode</li></ul>
+                        <a href="plants.html" class="btn btn--outline btn--lg" style="width:100%;">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card pricing-card--featured reveal">
+                    <div class="pricing-card__inner">
+                        <div class="pricing-card__icon">🌻</div>
+                        <h3 class="pricing-card__title">Gardener Pro</h3>
+                        <div class="pricing-card__price">₹199 <span>/ month</span></div>
+                        <p class="pricing-card__desc">For serious plant enthusiasts.</p>
+                        <ul class="pricing-card__features"><li>Everything in Seedling</li><li>Unlimited garden saves</li><li>Exclusive plant collection</li><li>Priority plant care support</li><li>Seasonal planting calendar</li></ul>
+                        <button class="btn btn--primary btn--lg" style="width:100%;" onclick="showToast('Thank you for your interest! Payment coming soon 🌻')">Subscribe Now</button>
+                    </div>
+                </div>
+                <div class="pricing-card reveal">
+                    <div class="pricing-card__inner">
+                        <div class="pricing-card__icon">🌳</div>
+                        <h3 class="pricing-card__title">Forest</h3>
+                        <div class="pricing-card__price">₹499 <span>/ month</span></div>
+                        <p class="pricing-card__desc">For community gardens & schools.</p>
+                        <ul class="pricing-card__features"><li>Everything in Gardener Pro</li><li>Team garden management</li><li>Custom plant database</li><li>API access</li><li>Dedicated support</li></ul>
+                        <button class="btn btn--accent btn--lg" style="width:100%;" onclick="showToast('Contact us for enterprise plans! 🌳')">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title reveal" style="font-size: var(--fs-xl); margin-bottom: var(--sp-6);">Accepted Payment Methods</h3>
+            <div class="payment-methods reveal">
+                <div class="payment-method"><span class="payment-method__icon">📱</span> UPI / Google Pay</div>
+                <div class="payment-method"><span class="payment-method__icon">💳</span> Credit / Debit Card</div>
+                <div class="payment-method"><span class="payment-method__icon">🏦</span> Net Banking</div>
+                <div class="payment-method"><span class="payment-method__icon">📲</span> PhonePe / Paytm</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div><div class="footer__brand">🌿 Bagicha</div><p class="footer__desc">Your digital companion for exploring plants, learning gardening tips, and growing a beautiful virtual garden.</p></div>
+                <div><h4 class="footer__heading">Pages</h4><a href="index.html" class="footer__link">Home</a><a href="plants.html" class="footer__link">Explore Plants</a><a href="tips.html" class="footer__link">Gardening Tips</a><a href="garden.html" class="footer__link">My Garden</a><a href="about.html" class="footer__link">About</a></div>
+                <div><h4 class="footer__heading">Account</h4><a href="register.html" class="footer__link">Sign Up</a><a href="payment.html" class="footer__link">Premium Plans</a></div>
+                <div><h4 class="footer__heading">Connect</h4><a href="#" class="footer__link">GitHub</a><a href="#" class="footer__link">Twitter</a><a href="#" class="footer__link">Email Us</a></div>
+            </div>
+            <div class="footer__bottom"><p class="footer__copy">&copy; 2026 Bagicha. Made with 💚 for plant lovers.</p><div class="footer__socials"><a href="#" class="footer__social-link" aria-label="GitHub">🐙</a><a href="#" class="footer__social-link" aria-label="Twitter">🐦</a><a href="#" class="footer__social-link" aria-label="Email">✉️</a></div></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

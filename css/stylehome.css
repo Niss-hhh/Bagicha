@@ -1,0 +1,38 @@
+/* ============================================
+   BAGICHA — Home Page (index.html)
+   Hero, features
+   ============================================ */
+
+/* ---- HERO ---- */
+.hero {
+  position: relative; min-height: calc(100vh - var(--nav-h)); display: flex; align-items: center;
+  overflow: hidden; margin-top: var(--nav-h);
+  background: linear-gradient(160deg, var(--clr-primary-50) 0%, var(--clr-bg) 40%, var(--clr-surface) 100%);
+}
+[data-theme="dark"] .hero { background: linear-gradient(160deg, var(--clr-primary-900) 0%, var(--clr-bg) 40%, var(--clr-surface) 100%); }
+.hero__content { position: relative; z-index: 2; max-width: 620px; }
+.hero__badge { display: inline-flex; align-items: center; gap: var(--sp-2); padding: var(--sp-2) var(--sp-4); background: var(--clr-primary-100); color: var(--clr-primary-700); font-size: var(--fs-sm); font-weight: var(--fw-semibold); border-radius: var(--radius-pill); margin-bottom: var(--sp-6); animation: fadeInDown .6s var(--ease-out); }
+[data-theme="dark"] .hero__badge { background: rgba(34, 197, 94, .15); color: var(--clr-primary-300); }
+.hero__title { font-family: var(--ff-heading); font-size: var(--fs-hero); font-weight: var(--fw-black); line-height: var(--lh-tight); margin-bottom: var(--sp-6); animation: fadeInUp .7s var(--ease-out); }
+.hero__title span { background: linear-gradient(135deg, var(--clr-primary-500), var(--clr-primary-700)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero__description { font-size: var(--fs-lg); color: var(--clr-text-muted); line-height: var(--lh-loose); margin-bottom: var(--sp-8); animation: fadeInUp .8s var(--ease-out); }
+.hero__actions { display: flex; flex-wrap: wrap; gap: var(--sp-4); animation: fadeInUp .9s var(--ease-out); }
+.hero__visual { position: relative; z-index: 1; flex: 1; display: flex; align-items: center; justify-content: center; font-size: min(18vw, 260px); animation: float 6s ease-in-out infinite; }
+.hero .container { display: flex; align-items: center; gap: var(--sp-16); }
+
+.hero__blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .35; z-index: 0; animation: blobMove 20s ease-in-out infinite alternate; }
+.hero__blob--1 { width: 400px; height: 400px; background: var(--clr-primary-300); top: -100px; right: -50px; }
+.hero__blob--2 { width: 300px; height: 300px; background: var(--clr-accent-light); bottom: -80px; left: 10%; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 992px) {
+  .hero .container { flex-direction: column; text-align: center; }
+  .hero__actions { justify-content: center; }
+  .hero__visual { font-size: min(30vw, 200px); }
+}
+@media (max-width: 768px) {
+  .hero { min-height: auto; padding-block: var(--sp-12); }
+}
+@media (max-width: 480px) {
+  .hero__actions { flex-direction: column; }
+}

@@ -1,0 +1,34 @@
+/* ============================================
+   BAGICHA — Payment Page (payment.html)
+   ============================================ */
+
+.payment-section { background: linear-gradient(160deg, var(--clr-primary-50) 0%, var(--clr-bg) 100%); }
+[data-theme="dark"] .payment-section { background: linear-gradient(160deg, var(--clr-primary-900) 0%, var(--clr-bg) 100%); }
+
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--sp-8); margin-bottom: var(--sp-12); }
+.pricing-card { background: var(--clr-surface); border: 2px solid var(--clr-border); border-radius: var(--radius-xl); padding: var(--sp-8); text-align: center; transition: all var(--dur-base) var(--ease-out); position: relative; overflow: hidden; }
+.pricing-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.pricing-card--featured { border-color: var(--clr-primary-500); box-shadow: var(--shadow-md); }
+.pricing-card--featured::before { content: '⭐ Most Popular'; position: absolute; top: 0; left: 0; right: 0; padding: var(--sp-2); background: linear-gradient(135deg, var(--clr-primary-500), var(--clr-primary-700)); color: #fff; font-size: var(--fs-xs); font-weight: var(--fw-semibold); text-transform: uppercase; letter-spacing: .08em; }
+.pricing-card--featured .pricing-card__inner { padding-top: var(--sp-8); }
+
+.pricing-card__icon { font-size: 3rem; margin-bottom: var(--sp-4); display: inline-block; }
+.pricing-card__title { font-family: var(--ff-heading); font-size: var(--fs-xl); font-weight: var(--fw-bold); margin-bottom: var(--sp-2); }
+.pricing-card__price { font-size: var(--fs-3xl); font-weight: var(--fw-black); color: var(--clr-primary-600); margin-bottom: var(--sp-2); }
+.pricing-card__price span { font-size: var(--fs-sm); font-weight: var(--fw-regular); color: var(--clr-text-muted); }
+.pricing-card__desc { color: var(--clr-text-muted); font-size: var(--fs-sm); margin-bottom: var(--sp-6); }
+.pricing-card__features { text-align: left; margin-bottom: var(--sp-6); }
+.pricing-card__features li { padding: var(--sp-2) 0; font-size: var(--fs-sm); color: var(--clr-text-muted); display: flex; align-items: center; gap: var(--sp-2); }
+.pricing-card__features li::before { content: '✓'; color: var(--clr-primary-500); font-weight: var(--fw-bold); flex-shrink: 0; }
+
+.payment-methods { display: flex; justify-content: center; gap: var(--sp-6); flex-wrap: wrap; }
+.payment-method { display: flex; align-items: center; gap: var(--sp-3); padding: var(--sp-4) var(--sp-6); background: var(--clr-surface); border: 2px solid var(--clr-border); border-radius: var(--radius-lg); font-size: var(--fs-sm); font-weight: var(--fw-medium); transition: all var(--dur-fast) var(--ease-out); cursor: pointer; }
+.payment-method:hover { border-color: var(--clr-primary-400); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+.payment-method__icon { font-size: 1.6rem; }
+
+@media (max-width: 992px) {
+  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+}
+@media (max-width: 480px) {
+  .payment-methods { flex-direction: column; align-items: center; }
+}

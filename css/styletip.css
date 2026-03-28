@@ -1,0 +1,18 @@
+/* ============================================
+   BAGICHA — Tips Page (tips.html)
+   ============================================ */
+
+.tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--sp-8); }
+
+.tip-card { background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-xl); padding: var(--sp-8); transition: all var(--dur-base) var(--ease-out); position: relative; overflow: hidden; }
+.tip-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--clr-primary-400), var(--clr-primary-600)); transform: scaleX(0); transform-origin: left; transition: transform var(--dur-base) var(--ease-out); }
+.tip-card:hover::before { transform: scaleX(1); }
+.tip-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.tip-card__icon { font-size: 2.4rem; margin-bottom: var(--sp-4); }
+.tip-card__title { font-family: var(--ff-heading); font-size: var(--fs-xl); font-weight: var(--fw-semibold); margin-bottom: var(--sp-3); }
+.tip-card__text { color: var(--clr-text-muted); font-size: var(--fs-sm); line-height: var(--lh-loose); }
+
+@media (max-width: 480px) {
+  .tips-grid { grid-template-columns: 1fr; }
+}
