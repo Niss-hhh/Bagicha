@@ -100,5 +100,9 @@ Bagicha/
 * Learned to structure scalable frontend projects
 
 ---
+## 🌐 Live Demo
+
+🚀 Check out the live project here:  
+👉 https://niss-hhh.github.io/bagicha/
 
 
