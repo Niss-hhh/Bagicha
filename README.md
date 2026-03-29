@@ -103,6 +103,6 @@ Bagicha/
 ## 🌐 Live Demo
 
 🚀 Check out the live project here:  
-👉 https://niss-hhh.github.io/bagicha/
+👉 https://niss-hhh.github.io/Bagicha/
 
 
